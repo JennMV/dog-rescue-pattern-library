@@ -4,7 +4,8 @@
   --color-secondary: #163242;
   --color-accent: #f4f9ea;
 
-  --font-primary: "Muli", arial, sans-serif;
+  --font-primary: "Poppins", avenir, sans-serif;
+  --font-secondary: "Raleway", arial, sans-serif;
 }
 
 html {
