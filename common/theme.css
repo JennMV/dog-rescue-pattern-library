@@ -1,0 +1,12 @@
+:root {
+  --color-primary: #2a4b62;
+  --color-primary-light: #9bcccc;
+  --color-secondary: #163242;
+  --color-accent: #f4f9ea;
+
+  --font-primary: "Muli", arial, sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
