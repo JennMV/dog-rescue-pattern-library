@@ -12,105 +12,43 @@ html {
   color: var(--color-neutral);
 }
 
-h1 {
-  font-family: var(--font-secondary);
-  color: var(--color-primary);
-}
-
-h2 {
-  font-family: var(--font-secondary);
-  color: var(--color-primary);
-}
-
-h3 {
-  font-family: var(--font-secondary);
-  color: var(--color-primary);
-}
-
-h4 {
-  font-family: var(--font-secondary);
-  color: var(--color-primary);
-}
-
-h5 {
-  font-family: var(--font-secondary);
-  color: var(--color-primary);
-}
-
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-secondary);
   color: var(--color-primary);
 }
 
 ul {
-  font-family: var(--font-primary);
   color: var(--color-primary);
 }
 
 ol {
-  font-family: var(--font-primary);
   color: var(--color-primary);
 }
 
 dl {
-  font-family: var(--font-primary);
   color: var(--color-primary);
 }
 
-blockquote {
-  font-family: var(--font-primary);
-  color: var(--color-neutral);
-}
-
 cite {
-  font-family: var(--font-primary);
   color: var(--color-secondary);
 }
 
 em {
-  font-family: var(--font-primary);
   color: var(--color-primary);
 }
 
 strong {
-  font-family: var(--font-primary);
   color: var(--color-primary);
 }
 
 small {
-  font-family: var(--font-primary);
   color: var(--color-primary);
 }
 
-p {
-  font-family: var(--font-primary);
-  color: var(--color-neutral);
+a {
+  color: var(--color-secondary);
 }
 
-.nav {
-  font-family: var(--font-secondary);
-  color: #fff;
+mark {
   background-color: var(--color-secondary);
-}
-
-.nav a:hover {
-  font-family: var(--font-secondary);
-  color: var(--color-secondary);
-  background-color: #fff;
-}
-
-.btn {
-  font-family: var(--font-secondary);
-  color: var(--color-secondary);
-}
-
-.card {
-  font-family: var(--font-primary);
-  color: var(--color-secondary);
-}
-
-.card a {
-  list-style-type: none;
-  text-decoration: none;
-  color: var(--color-secondary);
 }
