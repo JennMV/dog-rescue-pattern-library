@@ -1,17 +1,21 @@
 .btn {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
+  border-radius: 10px;
   color: #fff;
+  transition: all 500ms linear;
 }
 
 .btn:hover {
   background-color: var(--color-neutral);
   border-color: transparent;
+  border-radius: 15px;
 }
 
 .btn-light {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
+  border-radius: 10px;
   color: #fff;
 }
 
@@ -23,6 +27,7 @@
 .btn-ghost {
   background-color: transparent;
   border-color: var(--color-primary);
+  border-radius: 10px;
   color: var(--color-primary);
 }
 
