@@ -1,3 +1,26 @@
+.top-bar {
+  background-color: var(--color-primary);
+  padding: .5em;
+}
+
+.top-bar-nav {
+  display: inline-block;
+  margin: 0;
+}
+
+.facebook .twitter .email {
+  height: 30px;
+  width: 30px;
+}
+
+.top-bar-nav > li {
+  padding-right: .2em;
+}
+
+.logo > a > img {
+  width: 150%;
+}
+
 .nav a {
   font-family: var(--font-secondary);
   color: #fff;
@@ -6,17 +29,22 @@
   text-decoration: none;
 }
 
+.nav a:active, .nav a:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px var(--color-primary);
+}
+
 .nav a:hover {
   font-family: var(--font-secondary);
   color: var(--color-secondary);
   background-color: #fff;
 }
 
-.logo, .nav {
-  vertical-align: middle;
+nav {
+  display: none;
 }
 
-.nav-check:checked ~ .nav {
+.nav-check:checked ~ nav {
   display: block;
 }
 
@@ -25,13 +53,14 @@
 }
 
 .nav-label {
-  float: left;
+  position: absolute;
+  z-index: 10000;
   margin: 10px;
-  height: 50px;
-  width: 50px;
-  background: url("../images/nav-icon.svg") 0 0 / 52px auto;
-  margin-left: .5em;
-  margin-top: .5em;
+  height: 55px;
+  width: 55px;
+  top: 8%;
+  left: 80%;
+  background: url("../../images/toggle-nav.svg") 0 0 / 55px auto;
 }
 
 .nav-check:hover ~ .nav-label {
@@ -48,4 +77,46 @@
 
 .nav-check:checked:hover ~ .nav-label {
   background-position: 0 -156px;
+}
+
+@media only screen and (min-width: 35em) {
+  nav li {
+    display: inline-block;
+  }
+
+  .nav-label, .nav-check {
+    display: none;
+    background: none;
+  }
+
+  .nav {
+    display: inline-block;
+  }
+
+  .logo {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .nav-wrapper {
+    text-align: center;
+  }
+
+  .logo > a > img {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .logo {
+    text-align: left;
+  }
+
+  .nav-wrapper {
+    text-align: right;
+  }
+
+  .logo > a > img {
+    width: 100%;
+  }
 }

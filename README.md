@@ -8,11 +8,11 @@ fonts:
     This secondary typeface is meant to be strong and bold and is to be seen as the most important on the page and to be viewed first. It shows dominance but the modern looking font is not harsh and still inviting. To be used on headings, buttons, and to highlight important things.
 colors:
   primary: |
-    The primary color represents tones from the original websites colors, it is to be seen as calming and friendly. Use for headings, footers and emphasis.
+    The primary color is set to represent all body copy and standard text. The deep brown follows the same wood colored theme but is dark to be easily legible.
   secondary: |
-    The secondary color represent accented items. It is a brighter toned blue to highlight important features. To be used on links, buttons, etc.
+    The secondary color represent accented items. It is a brighter toned mahogany to highlight important features. To be used on links, buttons, etc.
   neutral: |
-    The neutral color is a deeper tone of blue to continue the representation of calmness and also the darker color makes legibility easier and clearer. To be used on body copy, captions, tables, etc.
+    The neutral color is a lighter toned brown to continue the representation of calmness and wilderness and also the lighter color makes words stand out. To demonstrate hierarchy. To be used on headers, bolded, italicized, emphasis etc.
 ---
 
 LOYAL Rescue Inc. a private, registered, non-profit, foster-based dog rescue with foster home across Ontario. We will help any dog in need that we can, regardless of breed, age, medical condition or place of birth.

@@ -1,3 +1,4 @@
+/*
 :root {
   --color-primary: #2a4b62;
   --color-secondary: #9bcccc;
@@ -6,15 +7,25 @@
   --font-primary: "Raleway", arial, sans-serif;
   --font-secondary: "Poppins", avenir, sans-serif;
 }
+*/
+
+:root {
+  --color-primary: #443730;
+  --color-secondary: #550c18;
+  --color-neutral: #a5907e;
+
+  --font-primary: "Raleway", arial, sans-serif;
+  --font-secondary: "Poppins", avenir, sans-serif;
+}
 
 html {
   font-family: var(--font-primary);
-  color: var(--color-neutral);
+  color: var(--color-primary);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-secondary);
-  color: var(--color-primary);
+  color: var(--color-neutral);
 }
 
 ul {
@@ -34,15 +45,11 @@ cite {
 }
 
 em {
-  color: var(--color-primary);
+  color: var(--color-nuetral);
 }
 
 strong {
-  color: var(--color-primary);
-}
-
-small {
-  color: var(--color-primary);
+  color: var(--color-neutral);
 }
 
 a {
