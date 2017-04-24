@@ -3,7 +3,11 @@
   border-radius: 8px;
 }
 
-.card:hover {
+.icon-card {
+  transition: background-color 500ms ease-in;
+}
+
+.icon-card:hover {
   color: #fff;
   background-color: var(--color-secondary);
 }
@@ -19,6 +23,8 @@
 
 .dog-info-card:hover {
   border-radius: 100px;
+  color: #fff;
+  background-color: var(--color-neutral);
 }
 
 .card-img-flex:hover {

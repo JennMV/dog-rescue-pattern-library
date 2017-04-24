@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <header>
+  <header class="pad-b-2">
     <div id="header">
 
       <div id="header-meta" class="container-wrap top-bar">
@@ -73,158 +73,160 @@
     </div>
   </header>
 
-  <div class="text-center push-2 max-length gutter-2">
+  <div class="text-center push-2 max-length gutter-1-2">
     <h1>APPLICATION FORM</h1>
     <span>We need to know you as well as we can so please provide us with information that is as accurate as possible. Most of these questions do not have "right" or "wrong" answers. They are a way for us to verify that the dog you have selected would be well suited to your home and lifestyle.</span>
   </div>
 
   <form class="max-length island" method="post" novalidate>
     <div class="error-message error-message-highlighted push-1-2" role="alert" aria-live="assertive">
-      <h3 class="push-0">
-        <i class="icon i-32"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+      <p class="push-0 gutter-1-2 text-center">
+        <i class="icon i-32"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
         <span class="icon-label">There are items that require your attention</span>
-      </h3>
+      </p>
     </div>
 
     <hr class="pad-b">
 
-    <section class="pad-b-2">
-      <div class="push-1-2">
+    <section class="pad-b-2 grid">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <h2>ABOUT YOU</h2>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="dog-name">Name of dog you are interested in adopting</label>
         <input id="dog-name" required aria-describedby="dog-name-error">
         <p class="error-message milli island-1-4 push-0" id="dog-name-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide the name of the dog on the Loyal Rescue Inc. website that you are interested in applying for.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="name">Full name of applicant</label>
         <input id="name" required aria describedby="name-error">
         <p class="error-message milli island-1-4 push-0" id="name-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please povide the full name of the person applying.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="date">Your Date of Birth</label>
         <input id="date" required aria describedby="date-error">
         <p class="error-message milli island-1-4 push-0" id="date-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide your date of birth.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="address">Address of applicant</label>
         <input id="address" required aria describedby="address-error">
         <p class="error-message milli island-1-4 push-0" id="address-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide your address.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="city">City of applicant</label>
         <input id="city" required aria describedby="city-error">
         <p class="error-message milli island-1-4 push-0" id="city-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide the city you live in.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
-        <label for="province">Province</label>
-        <input id="province" required aria describedby="province-error">
-        <p class="error-message milli island-1-4 push-0" id="province-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-          <span class="icon-label">Please provide the province you live in.</span>
-        </p>
-        <select id="province" name="_subject">
-          <option>Alberta</option>
-          <option>British Columbia</option>
-          <option>Manitoba</option>
-          <option>New Brunswick</option>
-          <option>Newfoundland and Labrador</option>
-          <option>Nova Scotia</option>
-          <option>Northwest Territories</option>
-          <option>Nunavut</option>
-          <option>Ontario</option>
-          <option>Prince Edward Island</option>
-          <option>Quebec</option>
-          <option>Saskatchewan</option>
-          <option>Yukon</option>
-        </select>
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+        <div class="push-right">
+          <label for="province">Province</label>
+          <p class="error-message milli island-1-4 push-0" id="province-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the province you live in.</span>
+          </p>
+          <select id="province" name="_subject">
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Manitoba</option>
+            <option>New Brunswick</option>
+            <option>Newfoundland and Labrador</option>
+            <option>Nova Scotia</option>
+            <option>Northwest Territories</option>
+            <option>Nunavut</option>
+            <option>Ontario</option>
+            <option>Prince Edward Island</option>
+            <option>Quebec</option>
+            <option>Saskatchewan</option>
+            <option>Yukon</option>
+          </select>
+        </div>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
         <label for="postal-code">Postal Code</label>
         <input id="postal-code" required aria describedby="postal-code-error">
         <p class="error-message milli island-1-4 push-0" id="postal-code-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide your postal code.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="email">Email</label>
         <input type="email" id="email" required aria-describedby="email-error">
         <p class="error-message milli isalnd-1-4 push-0" id="email-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide a properly formatted email address</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="tel">Phone Number</label>
         <input id="tel" required aria describedby="tel-error">
         <p class="error-message milli island-1-4 push-0" id="tel-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide your phone number.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
-        <label for="number-adult">Number of adults in home</label>
-        <input id="number-adult" required aria describedby="number-adult-error">
-        <p class="error-message milli island-1-4 push-0" id="number-adult-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-          <span class="icon-label">Please provide the number of adults residing in the home of the applicant.</span>
-        </p>
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+        <div class="push-right">
+          <label for="number-adult">Number of adults in home</label>
+          <input id="number-adult" required aria describedby="number-adult-error">
+          <p class="error-message milli island-1-4 push-0" id="number-adult-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the number of adults residing in the home of the applicant.</span>
+          </p>
+        </div>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
         <label for="number-kid">Number of children in home</label>
         <input id="number-kid" required aria describedby="number-kid-error">
         <p class="error-message milli island-1-4 push-0" id="number-kid-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide the number of children residing in the home of the applicant.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
-        <label for="ages">Ages of children<em class="flag-optional milli normal">(if applicable)</em></label>
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
+        <label for="ages">Ages of children<em class="flag-optional milli normal"> (if applicable)</em></label>
         <input id="ages">
       </div>
     </section>
 
     <hr class="pad-b">
 
-    <section class="pad-b-2">
-      <div class="push-1-2">
+    <section class="pad-b-2 grid">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <h2>YOUR LIFESTYLE</h2>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="home">What type of residence do you live in?</label>
-        <input id="home" required aria describedby="home-error">
         <p class="error-message milli island-1-4 push-0" id="home-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide your current residence type.</span>
         </p>
         <select id="home" name="_subject">
@@ -238,52 +240,54 @@
         </select>
       </div>
 
-      <div class="push-1-2">
-        <label for="other">If other, specify.<em class="flag-optional milli normal">(if type of home is not listed)</em></label>
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
+        <label for="other">If other, specify. <em class="flag-optional milli normal">(if type of home is not listed)</em></label>
         <input id="other">
       </div>
 
-      <div class="push-1-2">
-        <label for="home-size">Home square footage?</label>
-        <input id="home-size" required aria describedby="home-size-error">
-        <p class="error-message milli island-1-4 push-0" id="home-size-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-          <span class="icon-label">Please povide your home square footage.</span>
-        </p>
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+        <div class="push-right">
+          <label for="home-size">Home square footage?</label>
+          <input id="home-size" required aria describedby="home-size-error">
+          <p class="error-message milli island-1-4 push-0" id="home-size-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
+            <span class="icon-label">Please povide your home square footage.</span>
+          </p>
+        </div>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
         <label for="backyard-size">Backyard square footage?</label>
         <input id="backyard-size" required aria describedby="backyard-size-error">
         <p class="error-message milli island-1-4 push-0" id="backyard-size-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please povide your backyard square footage.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="yard">Is your yard fully fenced in and secure?</label>
         <textarea id="yard" required aria describedby="yard-error"></textarea>
         <p class="error-message milli island-1-4 push-0" id="yard-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide information on your backyard fencing.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="day-time">Is there someone home during the day?</label>
         <textarea id="day-time" required aria describedby="day-time-error"></textarea>
         <p class="error-message milli island-1-4 push-0" id="day-time-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide information on who's home during thte day.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="hours">Aproximately how many hours a day will the dog be left home alone?</label>
         <input id="hours" required aria describedby="hours-error">
         <p class="error-message milli island-1-4 push-0" id="hours-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please povide how many hours the dog will be left alone at home a day.</span>
         </p>
       </div>
@@ -291,34 +295,34 @@
 
     <hr class="pad-b">
 
-    <section class="pad-b-2">
-      <div class="push-1-2">
+    <section class="pad-b-2 grid">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <h2>PET INFORMATION</h2>
         <p>Which of the following best describes the dog you are looking for?</p>
       </div>
 
-      <div class="push-1-2">
-        <label for="dog-age">Age</label>
-        <input id="dog-age" required aria describedby="dog-age-error">
-        <p class="error-message milli island-1-4 push-0" id="dog-age-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-          <span class="icon-label">Please provide your desired dog age.</span>
-        </p>
-        <select id="dog-age" name="_subject">
-          <option>No preference</option>
-          <option>Baby (0-6 months)</option>
-          <option>Puppy (6 months - 1 year)</option>
-          <option>Teen (1-2 years)</option>
-          <option>Adult (3-7 years)</option>
-          <option>Senior (8+ years)</option>
-        </select>
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+        <div class="push-right">
+          <label for="dog-age">Age</label>
+          <p class="error-message milli island-1-4 push-0" id="dog-age-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
+            <span class="icon-label">Please provide your desired dog age.</span>
+          </p>
+          <select id="dog-age" name="_subject">
+            <option>No preference</option>
+            <option>Baby (0-6 months)</option>
+            <option>Puppy (6 months - 1 year)</option>
+            <option>Teen (1-2 years)</option>
+            <option>Adult (3-7 years)</option>
+            <option>Senior (8+ years)</option>
+          </select>
+        </div>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
         <label for="size">Size</label>
-        <input id="size" required aria describedby="size-error">
         <p class="error-message milli island-1-4 push-0" id="size-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide your desired dog size.</span>
         </p>
         <select id="size" name="_subject">
@@ -330,25 +334,25 @@
         </select>
       </div>
 
-      <div class="push-1-2">
-        <label for="gender">Gender</label>
-        <input id="gender" required aria describedby="gender-error">
-        <p class="error-message milli island-1-4 push-0" id="gender-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-          <span class="icon-label">Please provide your desired dog gender.</span>
-        </p>
-        <select id="gender" name="_subject">
-          <option>No preference</option>
-          <option>Male</option>
-          <option>Female</option>
-        </select>
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+        <div class="push-right">
+          <label for="gender">Gender</label>
+          <p class="error-message milli island-1-4 push-0" id="gender-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
+            <span class="icon-label">Please provide your desired dog gender.</span>
+          </p>
+          <select id="gender" name="_subject">
+            <option>No preference</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
         <label for="coat">Coat</label>
-        <input id="coat" required aria describedby="coat-error">
         <p class="error-message milli island-1-4 push-0" id="coat-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide your desired dog coat length.</span>
         </p>
         <select id="coat" name="_subject">
@@ -360,27 +364,27 @@
         </select>
       </div>
 
-      <div class="push-1-2">
-        <label for="activity-level">Activity Level</label>
-        <input id="activity-level" required aria describedby="activity-level-error">
-        <p class="error-message milli island-1-4 push-0" id="activity-level-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-          <span class="icon-label">Please provide your desired dog activity level.</span>
-        </p>
-        <select id="activity-level" name="_subject">
-          <option>No preference</option>
-          <option>Minimal</option>
-          <option>Moderate</option>
-          <option>Active</option>
-          <option>Very active</option>
-        </select>
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+        <div class="push-right">
+          <label for="activity-level">Activity Level</label>
+          <p class="error-message milli island-1-4 push-0" id="activity-level-error">
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
+            <span class="icon-label">Please provide your desired dog activity level.</span>
+          </p>
+          <select id="activity-level" name="_subject">
+            <option>No preference</option>
+            <option>Minimal</option>
+            <option>Moderate</option>
+            <option>Active</option>
+            <option>Very active</option>
+          </select>
+        </div>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
         <label for="other-dog">Have you owned a dog before?</label>
-        <input id="other-dog" required aria describedby="other-dog-error">
         <p class="error-message milli island-1-4 push-0" id="other-dog-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide your desired dog coat length.</span>
         </p>
         <select id="other-dog" name="_subject">
@@ -389,29 +393,29 @@
         </select>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="pets">Number, type, and age of present resident pets</label>
         <textarea id="pets" required aria describedby="pets-error"></textarea>
         <p class="error-message milli island-1-4 push-0" id="pets-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide current pets' information.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="vaccinated">Are your other pets vaccinated?</label>
         <textarea id="vaccinated" required aria describedby="vaccinated-error"></textarea>
         <p class="error-message milli island-1-4 push-0" id="vaccinated-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide your desired dog coat length.</span>
         </p>
       </div>
 
-      <div class="push-1-2">
+      <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
         <label for="neutered">Are your other pets spayed/neutered?</label>
         <textarea id="neutered" required aria describedby="neutered-error"></textarea>
         <p class="error-message milli island-1-4 push-0" id="neutered-error">
-          <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
           <span class="icon-label">Please provide your desired dog coat length.</span>
         </p>
       </div>
@@ -424,157 +428,165 @@
         <h2>REFERENCES</h2>
       </div>
 
-      <div class="pad-b">
-        <h3>Veterinarian (or extra reference if you have no previous animal ownership)</h3>
-        <div class="push-1-2">
+      <div class="pad-b grid">
+        <h3 class="unit xs-1 s-1 m-1 l-1">Veterinarian <small>(or extra reference if you have no previous animal ownership)</small></h3>
+        <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
           <label for="name-1">Name</label>
           <input id="name-1" required aria describedby="name-1-error">
           <p class="error-message milli island-1-4 push-0" id="name-1-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please povide the full name of your reference.</span>
           </p>
         </div>
 
-        <div class="push-1-2">
-          <label for="relationship-1">Relationship</label>
-          <input id="relationship-1" required aria describedby="relationship-1-error">
-          <p class="error-message milli island-1-4 push-0" id="relationship-1-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Please povide the relationship between the applicant and your reference.</span>
-          </p>
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+          <div class="push-right">
+            <label for="relationship-1">Relationship</label>
+            <input id="relationship-1" required aria describedby="relationship-1-error">
+            <p class="error-message milli island-1-4 push-0" id="relationship-1-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
+              <span class="icon-label">Please povide the relationship between the applicant and your reference.</span>
+            </p>
+          </div>
         </div>
 
-        <div class="push-1-2">
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
           <label for="tel-1">Phone Number</label>
           <input id="tel-1" required aria describedby="tel-1-error">
           <p class="error-message milli island-1-4 push-0" id="tel-1-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please provide the telephone number of your reference.</span>
           </p>
         </div>
 
-        <div class="push-1-2">
+        <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
           <label for="email-1">Email</label>
           <input type="email-1" id="email" required aria-describedby="email-1-error">
           <p class="error-message milli isalnd-1-4 push-0" id="email-1-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please provide a properly formatted email address of your reference).</span>
           </p>
         </div>
       </div>
 
-      <div class="pad-b">
-        <h3>Reference 1</h3>
-        <div class="push-1-2">
+      <div class="pad-b grid">
+        <h3 class="unit xs-1 s-1 m-1 l-1">Reference 1</h3>
+        <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
           <label for="name-2">Name</label>
           <input id="name-2" required aria describedby="name-2-error">
           <p class="error-message milli island-1-4 push-0" id="name-2-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please povide the full name of your reference.</span>
           </p>
         </div>
 
-        <div class="push-1-2">
-          <label for="relationship-2">Relationship</label>
-          <input id="relationship-2" required aria describedby="relationship-2-error">
-          <p class="error-message milli island-1-4 push-0" id="relationship-2-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Please povide the relationship between the applicant and your reference.</span>
-          </p>
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+          <div class="push-right">
+            <label for="relationship-2">Relationship</label>
+            <input id="relationship-2" required aria describedby="relationship-2-error">
+            <p class="error-message milli island-1-4 push-0" id="relationship-2-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
+              <span class="icon-label">Please povide the relationship between the applicant and your reference.</span>
+            </p>
+          </div>
         </div>
 
-        <div class="push-1-2">
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
           <label for="tel-2">Phone Number</label>
           <input id="tel-2" required aria describedby="tel-2-error">
           <p class="error-message milli island-1-4 push-0" id="tel-2-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please provide the telephone number of your reference.</span>
           </p>
         </div>
 
-        <div class="push-1-2">
+        <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
           <label for="email-2">Email</label>
           <input type="email-2" id="email" required aria-describedby="email-2-error">
           <p class="error-message milli isalnd-1-4 push-0" id="email-2-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please provide a properly formatted email address of your reference).</span>
           </p>
         </div>
       </div>
 
-      <div class="pad-b">
-        <h3>Reference 2</h3>
-        <div class="push-1-2">
+      <div class="pad-b grid">
+        <h3 class="unit xs-1 s-1 m-1 l-1">Reference 2</h3>
+        <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
           <label for="name-3">Name</label>
           <input id="name-3" required aria describedby="name-3-error">
           <p class="error-message milli island-1-4 push-0" id="name-3-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please povide the full name of your reference.</span>
           </p>
         </div>
 
-        <div class="push-1-2">
-          <label for="relationship-3">Relationship</label>
-          <input id="relationship-3" required aria describedby="relationship-3-error">
-          <p class="error-message milli island-1-4 push-0" id="relationship-3-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Please povide the relationship between the applicant and your reference.</span>
-          </p>
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+          <div class="push-right">
+            <label for="relationship-3">Relationship</label>
+            <input id="relationship-3" required aria describedby="relationship-3-error">
+            <p class="error-message milli island-1-4 push-0" id="relationship-3-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
+              <span class="icon-label">Please povide the relationship between the applicant and your reference.</span>
+            </p>
+          </div>
         </div>
 
-        <div class="push-1-2">
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
           <label for="tel-3">Phone Number</label>
           <input id="tel-3" required aria describedby="tel-3-error">
           <p class="error-message milli island-1-4 push-0" id="tel-3-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please provide the telephone number of your reference.</span>
           </p>
         </div>
 
-        <div class="push-1-2">
+        <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
           <label for="email-3">Email</label>
           <input type="email-3" id="email" required aria-describedby="email-3-error">
           <p class="error-message milli isalnd-1-4 push-0" id="email-3-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please provide a properly formatted email address of your reference.</span>
           </p>
         </div>
       </div>
 
-      <div class="pad-b">
-        <h3>Reference 3</h3>
-        <div class="push-1-2">
+      <div class="grid">
+        <h3 class="unit xs-1 s-1 m-1 l-1">Reference 3</h3>
+        <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
           <label for="name-4">Name</label>
           <input id="name-4" required aria describedby="name-4-error">
           <p class="error-message milli island-1-4 push-0" id="name-4-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please povide the full name of your reference.</span>
           </p>
         </div>
 
-        <div class="push-1-2">
-          <label for="relationship-4">Relationship</label>
-          <input id="relationship-4" required aria describedby="relationship-4-error">
-          <p class="error-message milli island-1-4 push-0" id="relationship-4-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Please povide the relationship between the applicant and your reference.</span>
-          </p>
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+          <div class="push-right">
+            <label for="relationship-4">Relationship</label>
+            <input id="relationship-4" required aria describedby="relationship-4-error">
+            <p class="error-message milli island-1-4 push-0" id="relationship-4-error">
+              <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
+              <span class="icon-label">Please povide the relationship between the applicant and your reference.</span>
+            </p>
+          </div>
         </div>
 
-        <div class="push-1-2">
+        <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2">
           <label for="tel-4">Phone Number</label>
           <input id="tel-4" required aria describedby="tel-4-error">
           <p class="error-message milli island-1-4 push-0" id="tel-4-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please provide the telephone number of your reference.</span>
           </p>
         </div>
 
-        <div class="push-1-2">
+        <div class="push-1-2 unit xs-1 s-1 m-1 l-1">
           <label for="email-4">Email</label>
           <input type="email-4" id="email" required aria-describedby="email-4-error">
           <p class="error-message milli isalnd-1-4 push-0" id="email-4-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../images/error.svg#error" /></svg></i>
             <span class="icon-label">Please provide a properly formatted email address of your reference).</span>
           </p>
         </div>
