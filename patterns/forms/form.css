@@ -3,6 +3,7 @@
 }
 
 .is-validated input:invalid,
+.is-validated textarea:invalid,
 .is-validated input[type="checkbox"]:invalid + label::before {
   border-color: #f33;
 }
@@ -20,6 +21,7 @@
 
 .is-validated > .error-message:first-child,
 .is-validated input:invalid + .error-message,
+.is-validated textarea:invalid + .error-message,
 .is-validated input:invalid + label + .error-message {
   display: block;
 }
