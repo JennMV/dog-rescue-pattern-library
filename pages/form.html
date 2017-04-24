@@ -4,17 +4,78 @@
   <meta charset="utf-8">
   <title>Application Form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/modules.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
-  <link href="css/theme.css" rel="stylesheet">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Raleway:400,600" rel="stylesheet">
+  <link href="../patterns/header/header.css" rel="stylesheet">
+  <link href="../patterns/forms/form.css" rel="stylesheet">
+  <link href="../patterns/sections/sections.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
 </head>
 <body>
 
-  <div class="text-center push-2 max-length">
+  <header>
+    <div id="header">
+
+      <div id="header-meta" class="container-wrap top-bar">
+        <div class="container">
+          <ul class="top-bar-nav list-group-inline">
+            <li class="facebook">
+              <a class="icon i-32" href="https://www.facebook.com/LOYAL-Rescue-Inc-109918792364494/">
+                <svg><use xlink:href="../../images/icons.svg#facebook" /></svg>
+              </a>
+            </li>
+            <li class="twitter">
+              <a class="icon i-32" href="https://twitter.com/loyalrescuedogs">
+                <svg><use xlink:href="../../images/icons.svg#twitter" /></svg>
+              </a>
+            </li>
+            <li class="contact">
+              <a class="icon i-32" href="../send-us-email/">
+                <svg><use xlink:href="../../images/icons.svg#email" /></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="header-main" class="container-wrap gutter grid grid-middle">
+        <strong class="logo pad-t pad-b unit xs-1-2 s-1-2 m-1 l-1-4">
+          <a href="http://loyalrescue.com/">
+            <img src="../../images/logo.svg" alt="">
+          </a>
+        </strong>
+
+        <div role="navigation" class="main-menu nav nav-wrapper unit xs-1 s-1 m-1 l-3-4">
+          <input type="checkbox" class="nav-check absolute" id="nav-check">
+          <label class="nav-label image-replacement label-block absolute pin-tl push-t" for="nav-check">Navigate</label>
+          <nav class="menu-main-menu-container nav">
+            <ul id="menu-main-menu-container" class="menu list-group-inline push-0">
+              <li class="island-1-8">
+                <a class="block text-center gutter pad-t-1-4 pad-b-1-4 milli" href="#foradoption">For Adoption</a>
+              </li>
+              <li class="island-1-8">
+                <a class="block text-center gutter pad-t-1-4 pad-b-1-4 milli" href="#appication">Application</a>
+              </li>
+              <li class="island-1-8">
+                <a class="block text-center gutter pad-t-1-4 pad-b-1-4 milli" href="#happytails">Happy Tails</a>
+              </li>
+              <li class="island-1-8">
+                <a class="block text-center gutter pad-t-1-4 pad-b-1-4 milli" href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="text-center push-2 max-length gutter-2">
     <h1>APPLICATION FORM</h1>
-    <span>We need to know you as well as we can so please provide us with information that is as accurate possible. Most of these questions do not have "right" or "wrong" answers. They are a way for us to verify that the dog you have selected would be well suited to your home and lifestyle.</span>
+    <span>We need to know you as well as we can so please provide us with information that is as accurate as possible. Most of these questions do not have "right" or "wrong" answers. They are a way for us to verify that the dog you have selected would be well suited to your home and lifestyle.</span>
   </div>
 
   <form class="max-length island" method="post" novalidate>
@@ -25,7 +86,9 @@
       </h3>
     </div>
 
-    <section>
+    <hr class="pad-b">
+
+    <section class="pad-b-2">
       <div class="push-1-2">
         <h2>ABOUT YOU</h2>
       </div>
@@ -150,7 +213,9 @@
       </div>
     </section>
 
-    <section>
+    <hr class="pad-b">
+
+    <section class="pad-b-2">
       <div class="push-1-2">
         <h2>YOUR LIFESTYLE</h2>
       </div>
@@ -224,7 +289,9 @@
       </div>
     </section>
 
-    <section>
+    <hr class="pad-b">
+
+    <section class="pad-b-2">
       <div class="push-1-2">
         <h2>PET INFORMATION</h2>
         <p>Which of the following best describes the dog you are looking for?</p>
@@ -350,12 +417,14 @@
       </div>
     </section>
 
-    <section>
+    <hr class="pad-b">
+
+    <section class="pad-b-2">
       <div class="push-1-2">
         <h2>REFERENCES</h2>
       </div>
 
-      <div>
+      <div class="pad-b">
         <h3>Veterinarian (or extra reference if you have no previous animal ownership)</h3>
         <div class="push-1-2">
           <label for="name-1">Name</label>
@@ -363,15 +432,6 @@
           <p class="error-message milli island-1-4 push-0" id="name-1-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please povide the full name of your reference.</span>
-          </p>
-        </div>
-
-        <div class="push-1-2">
-          <label for="tel-1">Phone Number</label>
-          <input id="tel-1" required aria describedby="tel-1-error">
-          <p class="error-message milli island-1-4 push-0" id="tel-1-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Please provide the telephone number of your reference.</span>
           </p>
         </div>
 
@@ -385,6 +445,15 @@
         </div>
 
         <div class="push-1-2">
+          <label for="tel-1">Phone Number</label>
+          <input id="tel-1" required aria describedby="tel-1-error">
+          <p class="error-message milli island-1-4 push-0" id="tel-1-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the telephone number of your reference.</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
           <label for="email-1">Email</label>
           <input type="email-1" id="email" required aria-describedby="email-1-error">
           <p class="error-message milli isalnd-1-4 push-0" id="email-1-error">
@@ -394,7 +463,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="pad-b">
         <h3>Reference 1</h3>
         <div class="push-1-2">
           <label for="name-2">Name</label>
@@ -402,15 +471,6 @@
           <p class="error-message milli island-1-4 push-0" id="name-2-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please povide the full name of your reference.</span>
-          </p>
-        </div>
-
-        <div class="push-1-2">
-          <label for="tel-2">Phone Number</label>
-          <input id="tel-2" required aria describedby="tel-2-error">
-          <p class="error-message milli island-1-4 push-0" id="tel-2-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Please provide the telephone number of your reference.</span>
           </p>
         </div>
 
@@ -424,6 +484,15 @@
         </div>
 
         <div class="push-1-2">
+          <label for="tel-2">Phone Number</label>
+          <input id="tel-2" required aria describedby="tel-2-error">
+          <p class="error-message milli island-1-4 push-0" id="tel-2-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the telephone number of your reference.</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
           <label for="email-2">Email</label>
           <input type="email-2" id="email" required aria-describedby="email-2-error">
           <p class="error-message milli isalnd-1-4 push-0" id="email-2-error">
@@ -433,7 +502,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="pad-b">
         <h3>Reference 2</h3>
         <div class="push-1-2">
           <label for="name-3">Name</label>
@@ -441,15 +510,6 @@
           <p class="error-message milli island-1-4 push-0" id="name-3-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please povide the full name of your reference.</span>
-          </p>
-        </div>
-
-        <div class="push-1-2">
-          <label for="tel-3">Phone Number</label>
-          <input id="tel-3" required aria describedby="tel-3-error">
-          <p class="error-message milli island-1-4 push-0" id="tel-3-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Please provide the telephone number of your reference.</span>
           </p>
         </div>
 
@@ -463,6 +523,15 @@
         </div>
 
         <div class="push-1-2">
+          <label for="tel-3">Phone Number</label>
+          <input id="tel-3" required aria describedby="tel-3-error">
+          <p class="error-message milli island-1-4 push-0" id="tel-3-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the telephone number of your reference.</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
           <label for="email-3">Email</label>
           <input type="email-3" id="email" required aria-describedby="email-3-error">
           <p class="error-message milli isalnd-1-4 push-0" id="email-3-error">
@@ -472,7 +541,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="pad-b">
         <h3>Reference 3</h3>
         <div class="push-1-2">
           <label for="name-4">Name</label>
@@ -480,15 +549,6 @@
           <p class="error-message milli island-1-4 push-0" id="name-4-error">
             <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
             <span class="icon-label">Please povide the full name of your reference.</span>
-          </p>
-        </div>
-
-        <div class="push-1-2">
-          <label for="tel-4">Phone Number</label>
-          <input id="tel-4" required aria describedby="tel-4-error">
-          <p class="error-message milli island-1-4 push-0" id="tel-4-error">
-            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-            <span class="icon-label">Please provide the telephone number of your reference.</span>
           </p>
         </div>
 
@@ -502,6 +562,15 @@
         </div>
 
         <div class="push-1-2">
+          <label for="tel-4">Phone Number</label>
+          <input id="tel-4" required aria describedby="tel-4-error">
+          <p class="error-message milli island-1-4 push-0" id="tel-4-error">
+            <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
+            <span class="icon-label">Please provide the telephone number of your reference.</span>
+          </p>
+        </div>
+
+        <div class="push-1-2">
           <label for="email-4">Email</label>
           <input type="email-4" id="email" required aria-describedby="email-4-error">
           <p class="error-message milli isalnd-1-4 push-0" id="email-4-error">
@@ -511,6 +580,8 @@
         </div>
       </div>
     </section>
+
+    <hr size="4" noshade class="pad-b pad-t">
 
     <section class="milli">
       <div class="push-1-2">
@@ -543,5 +614,10 @@
   </form>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+
+  <footer role="contentinfo" class="milli text-center pad-t pad-b">
+    <p><small>LOYAL Rescue Inc. ©2017</small></p>
+  </footer>
+
 </body>
 </html>
