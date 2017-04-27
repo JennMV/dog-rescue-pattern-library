@@ -1,4 +1,5 @@
 @media only screen and (min-width: 60em) {
+
   .mission {
     padding-left: 5em;
     padding-right: 5em;
@@ -6,6 +7,7 @@
 }
 
 @media only screen and (min-width: 90em) {
+
   .mission {
     padding-left: 15em;
     padding-right: 15em;

@@ -3,28 +3,80 @@
   width: 100%;
 }
 
-.banner {
-  position: relative;
-  overflow: hidden;
-  max-height: 24em;
+.banner-content {
+  padding: 1em;
 }
 
-.banner-content {
-  color: #000;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+.banner-content p {
+  color: var(--color-primary);
 }
 
 @media only screen and (min-width: 35em) {
 
+  .banner {
+    position: relative;
+  }
+
+  .banner-content {
+    position: absolute;
+    bottom: 1em;
+    left: -1em;
+    top: 1em;
+    width: 21rem;
+  }
+
+  .banner-content p {
+    color: #fff;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .btn-ghost {
+    position: relative;
+    left: 14.5em;
+    bottom: -1em;
+    color: #fff;
+    border-color: #fff;
+  }
 }
 
 @media only screen and (min-width: 60em) {
 
+  .banner-content {
+    top: 4em;
+    width: 40rem;
+  }
+
+  .banner-content p {
+    width: 25rem;
+    text-align: left;
+  }
+
+  .btn-ghost {
+    left: -13em;
+  }
 }
 
 @media only screen and (min-width: 90em) {
 
+  .banner-content h1 {
+    font-size: 400%;
+    width: 60rem;
+    position: relative;
+    left: .5em;
+    text-align: left;
+  }
+
+  .banner-content p {
+    width: 27rem;
+    font-size: 140%;
+    line-height: 1.5;
+    padding-top: 4em;
+  }
+
+  .btn-ghost {
+    top: 4em;
+    left: -4em;
+    font-size: 130%;
+  }
 }
